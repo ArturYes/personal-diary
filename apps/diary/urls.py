@@ -21,5 +21,3 @@ urlpatterns = [
     path("diary/update/<int:pk>/", DiaryEntryUpdateView.as_view(), name="diary_entry_update"),
     path("diary/delete/<int:pk>/", DiaryEntryDeleteView.as_view(), name="diary_entry_delete"),
 ]
-
-
