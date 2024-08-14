@@ -1,0 +1,9 @@
+.venv/
+.idea/
+__pycache__/
+poetry.lock
+.VSCode
+
+# Private data
+.env.local
+.env.docker
