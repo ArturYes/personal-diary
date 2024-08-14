@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-md" aria-label="Fourth navbar example">
+  <div class="container-xl">
+  <a class="navbar-brand me-5" href="{% url 'diary:home' %}"><h1 class="display-4 m-0">Your Space for Thoughts</h1></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" 
+    aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+      
+    </span></button>
+
+    {% if user.is_authenticated %}
+
+    <div class="collapse navbar-collapse align-content-between flex-wrap gap-2" id="navbarsExample04">
+      <div class="navbar-nav gap-2 ms-md-auto mb-4 mb-sm-1 mb-md-0">
+        <a class="btn btn-outline-dark shadow-sm" href=" {% url 'diary:diary_entry_list' %}">Мой дневник</a>
+        <a class="btn btn-outline-dark shadow-sm" href=" {% url 'diary:diary_entry_create' %}">Создать запись</a>
+        <a class="p-2 btn btn-warning mr-1" href="{% url 'users:profile' %}">{{ user.email }}</a>
+
+      </div>
+      <div class="navbar-nav ms-md-auto gap-2">
+        <a>
+          <form action="{% url 'users:logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="p-2 btn btn-danger">Выйти</button>
+          </form>
+        </a>
+
+        {% else %}
+        <div class="navbar-nav gap-2 ms-md-auto mb-4 mb-sm-1 mb-md-0"> 
+          <button class="btn btn-outline-primary" type="submit"><a href="{% url 'users:login' %}">Войти</a></button>
+          <button class="btn btn-outline-success" type="submit"><a href="{% url 'users:register' %}">Зарегистрироваться</a></button>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</nav>

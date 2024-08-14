@@ -1,0 +1,40 @@
+{% extends 'diary/base.html' %} {% block content %} {% load my_tags %}
+
+<div class="btn-group text-right" role="group" aria-label="Basic outlined button group">
+  <button type="button" class="btn btn-outline-primary">
+    <a href="{% url 'diary:diary_entry_update' object.pk %}">Отредактировать</a>
+  </button>
+
+  <button type="button" class="btn btn-outline-primary">
+    <a href="{% url 'diary:diary_entry_delete' object.pk %}">Удалить</a>
+  </button>
+</div>
+
+<div class="text-center">
+  <h3>{{ object.title }}</h3>
+</div>
+
+<div class="clearfix">
+  <div class="row">
+    <div class="col-4">
+      <div class="float-left mr-3 mb-3">
+        {% if object.image %}
+        <img src="{{ object.image|media_url }}" class="img-fluid" alt="Responsive image" width="130%" />
+        {% else %}
+        <p>Изображения нет.</p>
+        {% endif %} {% if user.is_superuser %}
+        <small class="text-muted">
+          Автор: {{ object.author.first_name }} {{ object.author.last_name }} {{object.author.middle_name }} </small
+        ><br />
+        {% endif %}
+        <small class="text-muted">Создано: {{ object.created_at }}</small><br />
+        <small class="text-muted">В редакции от: {{ object.created_at }}</small>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="lh-lg fs-5">{{ object.text }}</div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
