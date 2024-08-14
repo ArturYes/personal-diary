@@ -41,7 +41,7 @@
             "birthday": null,
             "avatar": "users/avatar/avatar_default.png",
             "token": "4f660013cfd731c5501c1294c0568f",
-            "groups": [1],
+            "groups": [],
             "user_permissions": []
         }
     },
@@ -64,7 +64,7 @@
             "birthday": null,
             "avatar": "users/avatar/avatar_default.png",
             "token": "4f660013cfd731c5501c1294c0568f",
-            "groups": [1],
+            "groups": [],
             "user_permissions": []
         }
     },
@@ -87,7 +87,7 @@
             "birthday": null,
             "avatar": "users/avatar/avatar_default.png",
             "token": "4f660013cfd731c5501c1294c0568f",
-            "groups": [1],
+            "groups": [],
             "user_permissions": []
         }
     }

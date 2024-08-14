@@ -9,8 +9,7 @@
     "image": "diary/diary_entry/default.png",
     "created_at": "2024-08-14T17:31:10.453Z",
     "updated_at": "2024-08-14T17:31:10.469Z",
-    "is_published": true,
-    "is_banned": false
+    "is_published": true
   }
 },
 {
@@ -23,8 +22,7 @@
     "image": "diary/diary_entry/default.png",
     "created_at": "2024-08-14T17:35:10.453Z",
     "updated_at": "2024-08-14T17:35:10.469Z",
-    "is_published": true,
-    "is_banned": false
+    "is_published": true
   }
 },
 {
@@ -37,8 +35,7 @@
     "image": "diary/diary_entry/default.png",
     "created_at": "2024-08-14T17:36:10.453Z",
     "updated_at": "2024-08-14T17:36:10.469Z",
-    "is_published": true,
-    "is_banned": false
+    "is_published": true
   }
 },
 {
@@ -51,8 +48,7 @@
     "image": "diary/diary_entry/default.png",
     "created_at": "2024-08-14T17:37:10.453Z",
     "updated_at": "2024-08-14T17:37:10.469Z",
-    "is_published": true,
-    "is_banned": false
+    "is_published": true
   }
 },
 {
@@ -65,8 +61,7 @@
     "image": "diary/diary_entry/default.png",
     "created_at": "2024-08-14T17:55:05.561Z",
     "updated_at": "2024-08-14T17:55:05.561Z",
-    "is_published": true,
-    "is_banned": false
+    "is_published": true
   }
 },
 {
@@ -79,8 +74,7 @@
     "image": "diary/diary_entry/default.png",
     "created_at": "2024-08-14T17:55:25.331Z",
     "updated_at": "2024-08-14T17:55:25.331Z",
-    "is_published": true,
-    "is_banned": false
+    "is_published": true
   }
 },
 {
@@ -93,8 +87,7 @@
     "image": "diary/diary_entry/default.png",
     "created_at": "2024-08-14T17:55:39.784Z",
     "updated_at": "2024-08-14T17:55:39.784Z",
-    "is_published": true,
-    "is_banned": false
+    "is_published": true
   }
 }
 ]
