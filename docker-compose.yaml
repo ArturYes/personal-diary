@@ -7,6 +7,8 @@ services:
     restart: always
     env_file:
       - .env.docker
+    environment:
+      POSTGRES_USER: "postgres"
     container_name: postgres-16-2
     ports:
       - "5433:5432"
